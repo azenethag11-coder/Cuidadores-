@@ -158,7 +158,7 @@ if st.session_state.indice < len(preguntas):
         if st.button("Siguiente ➜"):
             st.session_state.indice += 1
             st.session_state.respondido = False
-            st.experimental_rerun()
+            st.rerun()
 
 else:
     total = len(preguntas)
@@ -179,4 +179,4 @@ else:
         st.session_state.indice = 0
         st.session_state.puntaje = 0
         st.session_state.respondido = False
-        st.experimental_rerun()
+        st.rerun()
